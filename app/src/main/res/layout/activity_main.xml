@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:text="Single Radio Button"
+        />
+    <RadioButton
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:text="Radio Button1"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:text="Radio Button2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Radio Button Inside Group"
+        android:textSize="30dp"
+        android:textColor="#000"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgroup">
+    <RadioButton
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:checked="false"
+        android:id="@+id/radioMale"/>
+    <RadioButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Female"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:id="@+id/radioFemale"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:text="Show Selected"
+        android:onClick="bttn"
+        android:id="@+id/button"/>
+
+</LinearLayout>
